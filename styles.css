@@ -44,4 +44,38 @@ main{
 	margin: 0px auto;
 	padding: 0 15px;
 }
-
+.empty-boxes {
+}
+.empty-boxes__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img{
+	padding-top: 110px;
+	padding-bottom: 10px;
+}
+.number {
+	margin-bottom: 22px;
+}
+.number__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h1{
+	text-align: center;
+	font-size: 90px;
+}
+.eror {
+}
+.eror__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0, 430px;
+}
+.backmain {
+}
+.backmain__container {
+}
