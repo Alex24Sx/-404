@@ -38,6 +38,12 @@ html,body{
 	flex-direction: column;
 	min-height: 100%;
 	}
+/* Все закинул в контейнер чтобы потом удобнее было делать адаптив */
+[class*="__container"]{
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
 body {
   color: #2f80ed;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -45,11 +51,20 @@ body {
 main{
 	flex: 1 1 auto;
 }
-/* Все закинул в контейнер чтобы потом удобнее было делать адаптив */
- [class*="__container"]{
-	max-width: 1280px;
-	margin: 0px auto;
-	padding: 0 15px;
+img{
+	padding-top: 110px;
+	padding-bottom: 10px;
+}
+h1{
+	text-align: center;
+	font-size: 90px;
+}
+p{
+	font-size: 11pt;
+}
+span{
+	text-decoration: underline;
+	color: #2f80ed;
 }
 .empty-boxes {
 }
@@ -57,10 +72,6 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-img{
-	padding-top: 110px;
-	padding-bottom: 10px;
 }
 .number {
 	margin-bottom: 22px;
@@ -70,30 +81,31 @@ img{
 	align-items: center;
 	justify-content: center;
 }
-h1{
-	text-align: center;
-	font-size: 90px;
+.eror-hover {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
 }
-.eror {
-}
-
 .eror__container {
 	width: 450px;
 	text-align:center;
 	padding: 0, 430px;
 }
-.eror ::before{
-	display: none;
-}
-
-p{
-	font-size: 11pt;
-}
 .footer {
-	padding-top: 280px;
+	padding-top: 250px; /* поставил на 30px меньше чем в брифе , не понятно зачем скролл нужен */
 	padding-bottom: 30px;
 }
 .footer__container {
 	text-align: center;
-	
+}
+/* hover */
+.number-hover:hover .eror-hover{
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 300ms;
+}
+.footer-hover:hover .eror-hover{
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 300ms;
 }
