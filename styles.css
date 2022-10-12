@@ -92,7 +92,7 @@ span{
 	transition: visibility 0s linear 300ms, opacity 300ms;
 }
 .footer {
-	padding-top: 250px; /* поставил на 30px меньше чем в брифе , не понятно зачем скролл нужен */
+	margin-top: 250px; /* поставил на 30px меньше чем в брифе , не понятно зачем скролл нужен */
 	padding-bottom: 30px;
 }
 .footer__container {
