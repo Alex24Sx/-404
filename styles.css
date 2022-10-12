@@ -81,15 +81,15 @@ span{
 	align-items: center;
 	justify-content: center;
 }
-.eror-hover {
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s linear 300ms, opacity 300ms;
-}
 .eror__container {
 	width: 450px;
 	text-align:center;
 	padding: 0, 430px;
+}
+.eror-hover {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
 }
 .footer {
 	padding-top: 250px; /* поставил на 30px меньше чем в брифе , не понятно зачем скролл нужен */
