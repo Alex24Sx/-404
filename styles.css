@@ -99,12 +99,12 @@ span{
 	text-align: center;
 }
 /* hover */
-.number-hover:hover .eror-hover{
+.number-hover:hover + .eror-hover{
 	visibility: visible;
 	opacity: 1;
 	transition: visibility 0s linear 0s, opacity 300ms;
 }
-.footer-hover:hover .eror-hover{
+.footer-hover:hover + .eror-hover{
 	visibility: visible;
 	opacity: 1;
 	transition: visibility 0s linear 0s, opacity 300ms;
